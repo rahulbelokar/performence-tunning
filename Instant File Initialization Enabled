@@ -1,0 +1,12 @@
+
+how to enable Instant File Initialization Enabled
+
+window+R  secpol.msc 
+
+1.Expand the Local Policies Folder
+2.Click on User Rights Assignment
+3.Go down to the “Perform Volume Maintenance Tasks” option and double click it
+4.Add your SQL Server Service account, and click OK out of the dialog.
+
+-- How to Check If Instant File Initialization Enabled or Not
+--exec xp_readerrorlog 0, 1, N'Database Instant File Initialization'
